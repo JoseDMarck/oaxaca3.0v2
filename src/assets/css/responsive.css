@@ -1,0 +1,1320 @@
+
+/* --------------------------------------------------------
+/* ---- Responsive: 4000px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:4000px) {
+
+ 
+ .BloquesElecciones{
+  width: 20%;
+}
+
+
+.Bloque_GrandeF {
+  width: 40% !important;
+}
+
+
+.menu > .Bloques{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.BloqueCurrentInicio {
+    margin-left: 6% !important;
+}
+
+
+
+
+}/* 2200 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 2100px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:2100px) {
+
+
+
+.menu > .Bloques{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.BloqueCurrentInicio {
+    margin-left: 6% !important;
+}
+ 
+ 
+ 
+}/* 2200 */
+
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1920px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1920px) {
+
+
+
+ .BloquesElecciones{
+  width: 25%;
+}
+
+
+.Bloque_GrandeF {
+  width: 50% !important;
+}
+
+
+.menu > .Bloques{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+  
+ 
+}/* 19320 */
+
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1820px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1820px) {
+
+  .menu > .Bloques{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ 
+
+
+}/* 2200 */
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1690px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1690px) {
+
+  .menu {
+    font-size: 17px;
+    height: auto;
+  }
+
+  .menu > .Bloques {
+    padding-top: 20px;
+    padding-bottom:  20px;
+    height: auto;
+  }
+
+  .BloqueRed{
+    margin-right: 0px;
+  }
+
+  .menu > .Bloques{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+} /* 1690 */
+
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1540px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1540px) {
+
+ .menu {
+    font-size: 15px;
+    height: auto;
+    padding-left: 0px;
+  }
+
+  .menu > .Bloques {
+     margin-left: 0px;
+  }
+
+
+
+  .contenidoPost  {
+    width: 65%;
+  }
+
+  .NotasRelacionadas{
+    width: 420px;
+    float: right;
+  }
+
+  .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+
+  .NotasRelacionadas > .BloqueInformacion > .imagen {
+    height: 120px;
+  }
+
+  .NotasRelacionadas > .BloqueInformacion > .informacion {
+    height: auto;
+  }
+
+}
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1480px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1520px) {
+
+.ContendorBloquePost > .imagen{
+  width: 100%;
+  height: 300px;
+}
+
+
+
+} /* 1520 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1480px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1480px) {
+ 
+ 
+
+
+.ContendorBloquePost > .imagen img{
+  width: 150%;
+  height: auto;
+}
+
+.ContendorBloquePost > .titulo {
+  font-size: 26px;
+  line-height: 28px;
+}
+
+
+.BloqueCurrentInicio {
+    margin-left: 0% !important;
+}
+ 
+
+.Listado{
+  max-width: 100%;
+}
+
+.BloqueOX{
+  width: 25%;
+  height: 400px;
+}
+
+
+
+}/* 14480 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1366px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1366px) {
+
+
+ 
+.header > .logo {
+    width: 480px;
+}
+
+.NotasRelacionadas > .BloqueInformacion > .imagen {
+   height: 120px;
+}
+
+.NotasRelacionadas > .BloqueInformacion {
+  color: #000;
+}
+
+
+}/* 1366 */
+
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1290px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1290px) {
+
+
+.ContendorBloquePost > .titulo {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.ContendorBloquePost > .categoria {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+
+ .menu {
+    font-size: 12px;
+    height: auto;
+    padding-left: 0px;
+  }
+
+  .menu > .Bloques {
+     margin-left: 0px;
+     padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+
+
+.BloqueOX{
+  width: 25%;
+  height: 340px;
+}
+
+ 
+}/* 1280 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1280px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1280px) {
+
+.BloquesElecciones{
+  width: 33.33%;
+}
+
+
+.Bloque_GrandeF {
+  width: 66.66% !important;
+}
+
+
+.BloqueMainPost {
+    max-width: 100%;
+}
+
+
+.contenidoPost {
+    width: 80%;
+    float: none;
+}
+
+
+.NotasRelacionadas {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #000;
+    float: none;
+    color: #FFF;
+    margin-top: 40px;
+    background: rgb(235, 235, 235) !important;
+}
+
+
+ 
+
+.NotasRelacionadas > .SeccionTitulo {
+     color: #000;
+}
+
+
+
+.NotasRelacionadas > .BloqueInformacion {
+    width: 50%;
+    float: left;
+}
+
+.NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+
+
+
+}/* 1280 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1220px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1220px) {
+
+
+
+
+
+
+
+}/* 1200 */
+
+ 
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1152px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1152px) {
+ 
+
+ .menu {
+    font-size: 12px;
+    height: auto;
+    padding-left: 0px;
+  }
+
+  .menu > .Bloques {
+     margin-left: 0px;
+     padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+}/* 1152 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1060px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1060px) {
+ 
+
+
+}
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1024px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1024px) {
+ 
+
+.ContendorBloquePost {
+  height: 570px
+}
+
+
+.ContendorBloquePost > .imagen{
+  width: 100%;
+  height: 260px;
+}
+
+
+.ContendorBloquePost > .extracto {
+  font-size: 14px;
+    line-height: 16px;   
+}
+
+
+.ContendorBloquePost > .titulo  {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+
+.ContendorBloquePost > .categoria  {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.contenidoPost {
+    width: 100%;
+    float: none;
+}
+
+
+.Seccion-titulo > .BloqueDatos {
+    width: 100%;
+    height: auto;
+    padding-left: 0px;  
+    float: left;
+}
+
+
+.BloqueContadorDias{
+    position: absolute;
+    right: 12%;
+    top: -160px;
+    width: 144px;
+    height: 162px;
+    background-color: #000;
+}
+
+
+ 
+.BloqueContadorDias  > .texto-A {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.BloqueContadorDias  > .texto-B  {
+    font-size: 42px;
+    line-height: 42px;
+}
+
+.header > .logo  {
+    width: 350px;
+}
+
+.datos_bloques_next > .titulo span  {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.titulo-Secciones  {
+    width: 50%;
+    font-size: 25px;
+    margin-left: 5px;    
+}
+
+
+}/* 1024 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 1000px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:1000px) {
+
+  .menu  > .Bloques {
+      margin-left: 0px;
+      display: none;
+  }
+
+  .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+      font-size: 12px;
+      line-height: 12px;
+  }
+
+  .menuMovil{
+    display: block;
+  }
+
+  .menuIcon{
+    display: block;
+  }
+
+  .texto_publicaciones{
+    display: block;
+  }
+ 
+
+.Menu-Activo-Movil > .btn_Close{
+  width: 24px;
+  height: 24px;
+  background: url("assets/images/home/close.png");
+  background-size: 24px 24px;
+  position: absolute;
+  top: 5px;
+  right: 5px; 
+}
+
+.logo-simple {
+  top: 15px !important;
+  font-size: 16px !important;
+}
+
+
+.BloqueContadorDias {
+    top: -160px;
+}
+
+.Listado {
+  width: 100%;
+}
+
+.redes-header{
+    width: 160px !important;
+    right: 0px !important;
+}
+
+.redes-header a{
+  margin-right: 0 !important;
+}
+
+
+.BloqueOX{
+  width: 25%;
+  height: 300px;
+}
+
+
+
+.Bloque-Full-Post  {
+    font-size: 25px;
+    line-height: 25px;
+    height: 568px;
+}
+
+
+.contenedorBuscar {
+    right: 160px !important;
+}
+
+ 
+
+}
+
+/* --------------------------------------------------------
+/* ---- Responsive: 910px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:910px) {
+
+ 
+.Post_Redered p{
+   
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+
+.Seccion-titulo > .BloqueDatos > .titulo {
+    font-family: "Gotham-Black";
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+ 
+
+
+.NotasRelacionadas  > .BloqueInformacion  > .informacion > .titulo  {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+}/* 900 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 860px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:860px) {
+
+
+  .Seccion-titulo > .BloqueDatos > .titulo {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.Seccion-titulo > .BloqueDatos > .fecha {
+    font-size: 16px;
+    line-height: 16px;
+}
+ 
+.Seccion-titulo > .BloqueDatos > .autor {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+ .ContendorBloquePost > .imagen{
+  width: 100%;
+  height: 200px;
+}
+
+
+
+.ContendorBloquePost {
+    height: 500px;
+}
+
+
+.NotasRelacionadas > .BloqueInformacion {
+    width: 100%;
+    float: left;
+    height: 170px;
+    overflow: hidden;
+
+}
+
+  .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
+
+.Post_Redered {
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+}
+
+
+.SizeSpan-1{
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+
+.NotasRelacionadas > .BloqueInformacion > .informacion > .extracto{
+  display: block;
+}
+
+
+
+}/* 860 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 780px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:780px) {
+
+
+.BloquesElecciones {
+    width: 50%;
+}
+ 
+
+.Bloque_GrandeF {
+    width: 50% !important;
+}
+
+ 
+ .BloqueOX{
+  height: 440px;
+}
+
+
+.BloqueSize-2, .BloqueSize-3, .BloqueSize-4, .BloqueSize-5, .BloqueSize-6, .BloqueSize-7, .BloqueSize-8, .BloqueSize-9, .BloqueSize-10{
+  width: 50% !important;
+}
+
+.SizeSpan-1 {
+   font-size: 16px;
+  line-height: 30px;
+}
+
+.BloqueSize_next-1  {
+  width: 100% !important;
+  height: 420px !important;
+}
+
+.BloqueOX_next  {
+    width: 100%;
+}
+
+.video-Seccion > .inner > .Bloques{
+  width: 50%;
+}
+
+.footer > .contenedor > .bloques {
+    width: auto;
+}
+
+
+ 
+.banner_A{
+  width: 100%;
+  height: auto;
+  float: none;
+} 
+
+.banner_B{
+  width: 100%;
+  height: auto;
+  float: none;
+} 
+
+
+
+}
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 740px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:740px) {
+  .logo-simple  {
+      top: 16px;
+      font-size: 16px;
+  }
+
+}
+
+/* --------------------------------------------------------
+/* ---- Responsive: 700px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:700px) {
+
+ .titulo-Secciones  {
+    width: 70%;    
+}
+
+
+
+
+}/* 900 */
+
+
+
+ 
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 600px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:660px) {
+
+ .BloqueContadorDias{
+    display: none;
+ }
+
+ .BloqueContadorDiasMovil{
+  display: block;
+ }
+
+ .header  > .logo  {
+    width: 280px;
+}
+
+.text--line{
+  display: none;
+}
+
+.menu{
+  margin-bottom: 34px;
+}
+
+.ContendorBloquePost > .titulo {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+ .BloqueOX{
+  height: 340px;
+}
+
+.logo-simple {
+  top: 17px;
+  font-size: 14px;
+}
+
+
+
+
+}/* 660 */
+
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 640px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:640px) {
+
+.busquedaIcon{
+  display: inline-block !important; 
+}
+
+.redes-header {
+    right: 10px !important;
+}
+
+ 
+
+.busquedaIcon2{
+  display: none !important;
+}
+
+.contenedorBuscar {
+    width: 46% !important;
+    position: absolute;
+    left: 67px;
+    opacity: 0; 
+}
+
+
+}/* 640 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 615px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:615px) {
+
+  .logoM{
+    display: block !important;
+  }
+
+  .logoW{
+    display: none !important; 
+  }
+
+}
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 568px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:580px) {
+ 
+
+
+
+}
+
+/* --------------------------------------------------------
+/* ---- Responsive: 568px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:568px) {
+
+
+.ContendorBloquePost{
+    height: 480px;
+}
+
+
+
+ .ContendorBloquePost > .extracto {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+.header > .logo {
+    width: 60%;
+}
+
+.NotasRelacionadas {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #000;
+    float: none;
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.NotasRelacionadas > .BloqueInformacion {
+    height: auto;
+}
+
+.NotasRelacionadas > .BloqueInformacion > .imagen{
+    width: 100%;
+    height: 180px;
+    float: none;
+    margin-bottom: 10px;
+}
+
+
+.NotasRelacionadas > .BloqueInformacion > .informacion {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 5px;
+}
+
+
+.NotasRelacionadas > .BloqueInformacion > .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+
+.NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+.ContendorBloquePost > .titulo  {
+    margin-bottom: 10px;
+}
+
+.ContendorBloquePost > .categoria  {
+   margin-bottom: 10px;
+   font-size: 14px;
+  line-height: 14px;
+}
+
+
+.BloquesElecciones {
+    width: 100%;
+}
+
+.ContendorBloquePost > .titulo {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.ContendorBloquePost > .extracto {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
+.ContendorBloquePost > .imagen{
+  height: 200px;
+}
+
+
+.ContendorBloquePost > .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.Bloque_GrandeF {
+    width: 100% !important;
+}
+
+
+
+.Bloque-Full-Post  > .BloqueDatos  > .titulo  { 
+    font-size: 20px;
+    line-height: 20px; 
+}
+
+
+.Bloque-Full-Post{
+  height: 468px;
+}
+
+
+.footer > .contenedor > .bloques {
+    width: auto;
+}
+
+
+
+.contenedorBuscar {
+    right: 132px;
+}
+
+.Redacciones > .bloques{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.Redacciones > .bloques img {
+  width: 50%;
+  height: auto;
+} 
+
+}/* 568 */
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 520px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:520px) {
+
+ 
+
+}/* 520 */
+
+/* --------------------------------------------------------
+/* ---- Responsive: 900px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:490px) {
+
+ .BloqueSize-1{
+  width: 100% !important;
+ }
+
+
+.BloqueSize-2, .BloqueSize-3, .BloqueSize-4, .BloqueSize-5, .BloqueSize-6, .BloqueSize-7, .BloqueSize-8, .BloqueSize-9, .BloqueSize-10{
+  width: 100% !important;
+}
+
+
+ .BloqueOX{
+  height: 440px;
+}
+
+
+ .ContendorBloquePost{
+    height: 400px;
+}
+
+
+
+ .ContendorBloquePost > .extracto {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
+.ContendorBloquePos > .titulo {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.ContendorBloquePost > .imagen > .fecha {
+    width: 50px;
+    height: 50px;
+     
+}
+
+.ContendorBloquePost > .imagen > .fecha > .mes {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.ContendorBloquePost > .imagen > .fecha > .dia {
+    font-size: 27px;
+    line-height: 26px;
+}
+
+
+.titulo-Secciones  {
+    width: 90%;    
+}
+
+
+.video-Seccion > .inner > .Bloques{
+  width: 100%;
+  border-right: solid 0px rgba(0, 0, 0, 0);
+}
+
+
+.footer > .contenedor > .bloques {
+    width:  auto;
+}
+
+
+ 
+}/* 900 */
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 900px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:460px) {
+
+ 
+
+
+.NotasRelacionadas > .BloqueInformacion {
+    width: 100%;
+    float: left;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.footer-general > .imagen_elecciones {
+    width: 45px;
+}
+
+.footer-general {
+    width: 100%;
+    height: 60px;
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    left: 0px;
+}
+
+
+.footer-general > .imagen_revo {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.BloqueSize_next-1{
+    width: 100% !important;
+    height: 250px !important;
+}
+
+
+.BloqueOX_next {
+  padding: 0px 0 20px 0px;
+}
+
+
+.BloqueOX_next > .subloques  {
+    width: 100%;
+    height: 250px;
+    padding: 0px 0 0px 10px;
+    border-right: solid 0px rgba(0, 0, 0, 0);
+     
+}
+ 
+
+
+
+}/* 900 */
+
+
+
+/* --------------------------------------------------------
+/* ---- Responsive: 900px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:430px) {
+  
+  .redes-header  {
+    top: 12px;
+    right:  0px !important;
+  }
+
+.Menu-Activo-Movil {
+    width: 320px;
+}
+
+
+.footer > .contenedor > .bloques {
+    width: auto;
+}
+
+.logo-F{
+  width: 10%;
+}
+
+
+ .contenedorBuscar {
+    width: 38% !important;
+}
+
+.ContenedorFintrado{
+  left: -30px !important;
+}
+
+}
+
+/* --------------------------------------------------------
+/* ---- Responsive: 900px
+-------------------------------------------------------- */
+
+@media only screen and (max-width:400px) {
+
+
+  .BloquesElecciones {
+    width: 100%;
+}
+ 
+
+.Bloque_GrandeF {
+    width: 100% !important;
+}
+
+ 
+
+.ContendorBloquePost > .imagen{
+  height: 180px;
+}
+
+
+.titulo-Secciones  {
+    font-size: 20px;
+}
+
+
+.Menu-Activo-Movil  > .logo {
+    width: 40%;
+}
+
+.Menu-Activo-Movil > .Bloques {
+   
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contenedor-datos > .bloques{
+  font-size: 10px;
+}
+
+
+
+}/* 900 */
+
+@media only screen and (max-width:380px) {
+
+  .ContendorBloquePost > .titulo {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.ContendorBloquePost > .categoria {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
+ .BloqueOX{
+  height: 400px;
+}
+
+.contenedorBuscar{
+    width: 100px;
+}
+
+
+ .contenedorBuscar {
+    width: 30% !important;
+}
+
+.logo-simple{
+  display: none;
+}
+
+}
+
+
+
+

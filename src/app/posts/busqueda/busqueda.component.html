@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="assets/bootstrap-4.0.0-beta-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+<div class="ScrollPost">
+
+<app-menu-general></app-menu-general>
+
+
+<div class="Listado" [@fadeInAnimation]="stateName" *ngIf="SearchReady">
+
+
+    
+ <div class="titulo-Secciones titulo-Secciones-Busqueda">Inicia una búsqueda</div>
+
+
+<div class="contenedorBuscarPost" >
+   <input class="form-control" type="text" name="search" placeholder="Buscar..." [(ngModel)]="filter" (click)="openSearch()">     
+</div><!-- ContenedorBuscar -->
+
+
+<!-- ==================  SECCION PRINCIPALES ================== -->
+   <div class="BloqueSeccionOX">
+   
+
+
+
+
+
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize-2" *ngFor="let post of posts_search_full | filter:filter; let i = index " (click)="selectPost(post.slug)">
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-2">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+  <div style="clear: both;"></div>
+  </div><!-- BloqueSeccionOX -->
+
+
+
+  </div><!-- Listado -->
+</div><!--scrollPost END -->
+
+
+</body>
+<link rel="stylesheet" href="assets/css/responsive.css">
+</html>
+
+
+
+
+
+ 

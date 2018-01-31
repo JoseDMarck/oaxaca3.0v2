@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="assets/bootstrap-4.0.0-beta-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+<div class="ScrollPost">
+
+  <app-menu-general></app-menu-general>
+
+  <div class="Listado" [@fadeInAnimation]="stateName">
+  
+
+<!-- ==================  SECCION PRINCIPALES ================== -->
+   <div class="BloqueSeccionOX">
+
+
+   	<!-- app-banner-header-home -->
+   	<div class="banner_full">
+   		<app-banner-header-home></app-banner-header-home>
+   	</div>
+   	<!-- app-banner-header-home -->
+   
+
+
+    <div class="titulo-Secciones">Noticias Principales</div>
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize-{{i+1}}"  *ngFor="let post of posts_principales; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-{{i+1}}">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+
+<div class="banner_conetedor">
+
+	<!-- app-banner-home-1 -->
+	<div class="banner_A">
+		<app-banner-home-1></app-banner-home-1>
+	</div>
+	<!-- app-banner-home-1 -->
+
+
+	<!-- app-banner-home-2 -->
+	<div class="banner_B">
+		<app-banner-home-2></app-banner-home-2>
+	</div>
+	<!-- app-banner-home-2 -->
+<div style="clear: both;"></div>	
+</div><!-- banner_conetedor -->
+
+
+  <div style="clear: both;"></div>
+  </div><!-- BloqueSeccionOX -->
+
+
+
+  <!-- ==================  SECCION GLAMOUR ================== -->
+   <div class="BloqueSeccionOX">
+    <div class="titulo-Secciones">Glamour</div>
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize_next-1"  *ngFor="let post of posts_glamour; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-{{i+1}}">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+
+    <div class="BloqueOX_next">
+      <div class="subloques"  *ngFor="let post of posts_glamour_next; let i = index; " (click)="selectPost(post.slug)" >
+        <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+        <div class="datos_bloques_next">
+          
+
+          <div class="titulo">
+            <span class="">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+      </div><!-- datos -->
+
+      </div><!--Subloques -->
+       
+
+    </div><!-- BloqueOX Next -->
+
+
+
+   
+
+  <div style="clear: both;"></div>
+
+ <!-- app-banner-home-3 -->
+   <div class="banner_full">
+   	<app-banner-home-3></app-banner-home-3>
+   </div>
+ <!-- app-banner-home-3 -->
+
+  </div><!-- BloqueSeccionOX -->
+
+
+    <!-- ==================  SECCION INTERNET ================== -->
+   <div class="BloqueSeccionOX">
+    <div class="titulo-Secciones">Internet</div>
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize_next-1"  *ngFor="let post of posts_internet; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-{{i+1}}">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+      </div><!-- datos -->
+
+
+
+    </div><!-- BloqueOX -->
+
+
+    <div class="BloqueOX_next">
+      <div class="subloques"  *ngFor="let post of posts_internet_next; let i = index; " (click)="selectPost(post.slug)" >
+        <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+        <div class="datos_bloques_next">
+          
+
+          <div class="titulo">
+            <span class="">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+      </div><!-- datos -->
+
+      </div><!--Subloques -->
+       
+
+    </div><!-- BloqueOX Next -->
+
+
+
+
+
+
+  <div style="clear: both;"></div>
+
+
+  <!--app-banner-home-4 -->
+    <div class="banner_full">
+    		<app-banner-home-4></app-banner-home-4>
+    </div>
+
+   <!--app-banner-home-4 -->
+
+  </div><!-- BloqueSeccionOX -->
+
+
+
+<!-- ==================  SECCION DEPORTES ================== -->
+   <div class="BloqueSeccionOX">
+
+    <div class="titulo-Secciones">Deportes</div>
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize-2"  *ngFor="let post of posts_deportes; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-2">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+
+
+<div class="banner_conetedor">
+
+<div class="banner_A">
+	<app-banner-home-5></app-banner-home-5>
+</div>
+
+<div class="banner_B">
+	<app-banner-home-6></app-banner-home-6>
+</div>
+
+<div style="clear: both;"></div>	
+</div><!-- banner_conetedor -->
+
+
+  <div style="clear: both;"></div>
+
+  </div><!-- BloqueSeccionOX -->
+
+
+
+
+  <!-- ==================  SECCION ESPECTACULOS ================== -->
+   <div class="BloqueSeccionOX">
+    <div class="titulo-Secciones">Espectáculos</div>
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize_next-1"  *ngFor="let post of posts_espectaculos; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-{{i+1}}">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+
+    <div class="BloqueOX_next">
+      <div class="subloques"  *ngFor="let post of posts_espectaculos_next; let i = index; " (click)="selectPost(post.slug)" >
+        <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+        <div class="datos_bloques_next">
+          
+
+          <div class="titulo">
+            <span class="">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+      </div><!-- datos -->
+
+      </div><!--Subloques -->
+       
+
+    </div><!-- BloqueOX Next -->
+
+  <div style="clear: both;"></div>
+
+
+
+<div class="banner_conetedor">
+
+<div class="banner_A">
+	<app-banner-home-7></app-banner-home-7>
+</div>
+<div class="banner_B">
+	<app-banner-home-8></app-banner-home-8>
+</div>
+
+
+<div style="clear: both;"></div>	
+</div><!-- banner_conetedor -->
+
+
+  </div><!-- BloqueSeccionOX -->
+
+
+ <!-- ==================  VIDEO SECCION ================== -->
+  <div class="video-Seccion">
+    
+    <div class="titulo-Secciones">Videos</div>
+    <div style="clear: both;"></div> 
+
+      <div class="inner">
+        <div class="Bloques" *ngFor="let post of posts_videos; let i = index; " (click)="selectPost(post.slug)">
+          <div class="playIconVideos"></div>
+          <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+
+          <div class="informacion">
+            {{ post.title.rendered }}
+          </div><!-- informacion -->
+
+
+        </div>
+         
+         <div style="clear: both;"></div>
+      </div><!-- inner -->
+
+     
+      <div style="clear: both;"></div> 
+
+        <div class="banner_full">
+        	<app-banner-home-9></app-banner-home-9>
+        </div>
+ 
+  </div><!-- video-seccion -->
+
+
+
+  <!-- ==================  SECCION EN OAXACA ================== -->
+   <div class="BloqueSeccionOX">
+
+    <div class="titulo-Secciones">En Oaxaca</div>
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize-2"  *ngFor="let post of posts_en_oaxaca; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-2">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+  <div style="clear: both;"></div>
+
+   <div class="banner_full">
+   		<app-banner-home-10></app-banner-home-10>
+   </div>
+
+
+  </div><!-- BloqueSeccionOX -->
+
+
+
+
+   <!-- ==================  SECCION REDACCIONES ================== -->
+   <div class="Redacciones">
+  
+    
+     
+      <div class="bloques">
+        <a href="http://revoluciontrespuntocero.mx/" target="_blank">
+          <img src="assets/images/home/logo-revo.png">
+        </a>
+      </div>
+
+       <div class="bloques">
+        <a href="http://michoacantrespuntocero.com/" target="_blank">
+          <img src="assets/images/home/logo-michoacan.png">
+        </a>
+      </div>
+
+
+      <div class="bloques">
+        <a href="http://www.argoscomunicacion.com/" target="_blank">
+          <img src="assets/images/home/logo-argos.png">
+        </a>
+      </div>
+
+
+      <div class="bloques">
+        <a href="http://zacatecastrespuntocero.com/" target="_blank">
+           <img src="assets/images/home/logo-michoacan.png">
+        </a>
+      </div>
+
+      <div style="clear: both;"></div>
+    </div><!-- BloqueOX -->
+
+
+  </div><!-- Listado -->
+</div><!--scrollPost END -->
+
+
+</body>
+<link rel="stylesheet" href="assets/css/responsive.css">
+</html>
+
+
+
+
+
+ 

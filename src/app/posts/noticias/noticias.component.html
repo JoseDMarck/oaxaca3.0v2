@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="assets/bootstrap-4.0.0-beta-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+<div class="ScrollPost" infiniteScroll 
+        [infiniteScrollDistance]="1200"
+        [infiniteScrollThrottle]="1200"
+        (scrolled)="onScroll()">
+
+ <app-menu-general></app-menu-general>
+
+
+
+  <div class="Listado" [@fadeInAnimation]="stateName">
+
+<!-- ==================  SECCION PRINCIPALES ================== -->
+   <div class="BloqueSeccionOX">
+    <div class="titulo-Secciones titulo-Secciones-full">Publicaciones de: Noticias</div>
+
+     <div class="NoPublicaciones" *ngIf="post_exists_bol"> 
+       Por el momento no hay publicaciones para esta categoría, ¡espéralas muy pronto! 
+    </div>
+
+    <div style="clear: both;"></div> 
+  
+    <div class="BloqueOX BloqueSize-2"  *ngFor="let post of posts; let i = index; " (click)="selectPost(post.slug)" >
+      <div class="imagen-BG" [style.background-image]="getBackground(post.imagen_normalsize)"></div>
+    
+      <div class="datos">
+         <div class="categoria">
+            <span>
+              {{post.post_categoria}}
+             </span>
+          </div>
+
+          <div class="titulo">
+            <span class="SizeSpan-2">
+            {{ post.title.rendered }}
+          </span>
+          </div>
+
+
+      </div><!-- datos -->
+
+    </div><!-- BloqueOX -->
+
+  <div style="clear: both;"></div>
+  </div><!-- BloqueSeccionOX -->
+
+
+
+ 
+     
+
+
+ 
+
+
+ 
+
+
+  
+
+
+ 
+
+
+  </div><!-- Listado -->
+</div><!--scrollPost END -->
+
+
+</body>
+<link rel="stylesheet" href="assets/css/responsive.css">
+</html>
+
+
+
+
+
+ 
