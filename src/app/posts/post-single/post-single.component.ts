@@ -105,6 +105,7 @@ export class PostSingleComponent implements OnInit  {
          console.log("TAMAÑO BLOQUE", this.tam_bloque);
          this.getPostRelated(this.categoria, this.current_id);
          this.repoUrl = 'http://oaxacatrespuntocero.com/posts-redes/'+this.slugArray;
+         this.runTeads();
 
 
          if(this.tam_bloque != "" ){
@@ -127,7 +128,6 @@ export class PostSingleComponent implements OnInit  {
       .getPostsRelated(cat, current_id)
       .subscribe(res => {
         this.posts_related = res;
-
         console.log(this.posts_related)
          //this.imageX = this.sanitizer.bypassSecurityTrustStyle(`url(${element.image})`);
       });
@@ -143,13 +143,15 @@ export class PostSingleComponent implements OnInit  {
 
     });         
 
+  }
 
+  runTeads(){
+    console.log("Run reads *******");
     var script = document.createElement('script');
     document.body.appendChild(script)
     script.src = '//a.teads.tv/page/75644/tag';
-
-
   }
+  
 
 
   //ANIMACION TOGGLE

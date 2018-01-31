@@ -18,6 +18,8 @@ import { DeportesComponent  } from './posts/deportes/deportes.component';
 import { EspectaculosComponent  } from './posts/espectaculos/espectaculos.component';
 import { VideosComponent  } from './posts/videos/videos.component';
 import { OaxacaComponent  } from './posts/oaxaca/oaxaca.component';
+import { QuienesSomosComponent } from './posts/quienes-somos/quienes-somos.component';
+
 
 //BANNERS POST
 import {  BannerPost1Component } from './banners/banner-post-1/banner-post-1.component';
@@ -25,6 +27,8 @@ import {  BannerPost2Component } from './banners/banner-post-2/banner-post-2.com
 import {  BannerPost3Component } from './banners/banner-post-3/banner-post-3.component';
 import {  BannerPost4Component } from './banners/banner-post-4/banner-post-4.component';
 import {  BannerPost5Component } from './banners/banner-post-5/banner-post-5.component';
+
+
 
 
 
@@ -72,6 +76,7 @@ import { AdDFPComponent } from 'ng2-ad-dfp';
     EspectaculosComponent, 
     VideosComponent,
     OaxacaComponent,
+    QuienesSomosComponent,
 
     //Banners 
     BannerPost1Component,
