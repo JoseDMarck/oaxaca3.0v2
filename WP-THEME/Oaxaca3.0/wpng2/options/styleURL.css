@@ -1,0 +1,71 @@
+body{
+	background-color: #ecf0f1;
+}
+.BloqueGeneralUrl{
+	max-width: 1400px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	font-family: helvetica;
+	color: #222;
+	border: 1px solid #ccc;
+
+}
+
+.BloqueGeneralUrl a{
+	color: #222
+}
+
+.BloqueGeneralUrl a:hover{
+	color: #e74c3c
+}
+
+.BloqueGeneralUrl > .BloqueA{
+	width: 30%;
+	height: 80px;
+	margin-bottom: 30px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 18px;
+	float: left;
+	border-right:  solid 1px #ccc;
+    overflow: hidden;
+	padding: 5px;
+
+}
+
+
+.BloqueGeneralUrl > .BloqueB{
+	width: 60%;
+	height: 80px;
+	margin-bottom: 30px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 18px;
+	float: left;
+	padding: 5px;
+}
+
+
+
+.BloqueGeneralUrl > .BloqueC{
+	width: 30%;
+	height: auto;
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 18px;
+	float: left;
+	text-align: center;
+}
+
+.BloqueGeneralUrl > .BloqueD{
+	width: 70%;
+	height: auto;
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 18px;
+	float: left;
+	text-align: center;
+}
