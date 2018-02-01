@@ -94,7 +94,10 @@
 </ins> -->
  
   <!-- BannerTop -->
-    <app-banner-post-2></app-banner-post-2>
+    <!-- BannerTop -->
+    <div  *ngIf="tam_bloqueC_visible">
+      <app-banner-post-2></app-banner-post-2>
+  </div>
       
       <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)" class="Post_Redered"></div> 
 
