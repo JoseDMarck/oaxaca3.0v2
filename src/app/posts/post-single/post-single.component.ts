@@ -7,6 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { FacebookService, InitParams } from 'ngx-facebook';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { Ng2TweetService } from 'ng2-tweet/lib/index'
 
 
 
@@ -74,7 +75,7 @@ export class PostSingleComponent implements OnInit  {
   loadMoreVisible : boolean;
   selectedClass: number;
  
- constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService) { 
+ constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService, private ng2TwwetService: Ng2TweetService ) { 
    this.arregloCountCat = [];
     this.loadMoreVisible = false;
     this.futureString = "July 1, 2018 00:00:00";
@@ -179,7 +180,7 @@ export class PostSingleComponent implements OnInit  {
 
   ngAfterViewInit() {
 
- 
+    
  //setTimeout(() => { try { (window["adsbygoogle"] = window["adsbygoogle"] || []).push({}); } catch (e) { console.error(e);} }, 2000);
 
    console.log("estoy  en ngAfterViewInit")

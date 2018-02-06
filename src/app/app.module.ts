@@ -19,6 +19,7 @@ import { EspectaculosComponent  } from './posts/espectaculos/espectaculos.compon
 import { VideosComponent  } from './posts/videos/videos.component';
 import { OaxacaComponent  } from './posts/oaxaca/oaxaca.component';
 import { QuienesSomosComponent } from './posts/quienes-somos/quienes-somos.component';
+import { Ng2TweetModule } from 'ng2-tweet/lib/index';
 
 
 //BANNERS POST
@@ -111,6 +112,7 @@ import { AdDFPComponent } from 'ng2-ad-dfp';
     ShareModule,
     InfiniteScrollModule,
     Ng2SearchPipeModule,
+    Ng2TweetModule,
     FacebookModule.forRoot(),
     
      

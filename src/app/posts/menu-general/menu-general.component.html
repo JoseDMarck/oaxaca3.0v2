@@ -66,10 +66,10 @@
         <div class="btn_Close" (click)="closeSearch()"></div>
         <div style="clear: both;"></div>
         <div class="bloques"  (click)="GoToBusqueda()">Ir a página de busqueda</div>
-      <div class="bloques" *ngFor="let post of posts_search_full | filter:filter; let i = index " (click)="selectPost(post.slug)">
-      
-            {{ post.title.rendered }} 
-      </div>
+
+            <div  [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.title.rendered)" class="bloques" *ngFor="let post of posts_search_full | filter:filter; let i = index " (click)="selectPost(post.slug)"></div>
+
+     
 </div><!-- ContenedorFintrado -->
 
 

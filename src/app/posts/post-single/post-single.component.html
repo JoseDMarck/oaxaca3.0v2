@@ -56,7 +56,8 @@
 
 		<div class="BloqueDatos">
           <div class="categoria">{{post.post_categoria}}</div>
-			    <div class="titulo">{{post.title.rendered}}</div>
+         	     <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.title.rendered)" class="titulo"></div> 
+			    <!-- <div class="titulo">{{post.title.rendered}}</div>-->
                 <div class="fecha">{{ post.post_fecha}} | por: <span> {{post.post_author}} </span> </div>
                 
 		</div><!-- BloqueDatos -->
@@ -101,6 +102,8 @@
       
       <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)" class="Post_Redered"></div> 
 
+
+    <!-- <ng2-tweet tweetId="957671947055153152"></ng2-tweet>-->
 
    <!-- BannerBottom -->
     <app-banner-post-3></app-banner-post-3>

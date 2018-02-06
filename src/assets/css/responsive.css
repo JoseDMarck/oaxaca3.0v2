@@ -678,7 +678,7 @@
 
 .SizeSpan-1{
   font-size: 16px !important;
-  line-height: 26px !important;
+  line-height: 40px !important;
 }
 
 .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto{
@@ -752,6 +752,10 @@
   float: none;
 } 
 
+
+.SizeSpan-1{
+  line-height: 30px !important;
+}
 
 
 }

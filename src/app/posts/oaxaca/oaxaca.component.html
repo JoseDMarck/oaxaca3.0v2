@@ -40,9 +40,7 @@
           </div>
 
           <div class="titulo">
-            <span class="SizeSpan-2">
-            {{ post.title.rendered }}
-          </span>
+            <span [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.title.rendered)" class="SizeSpan-2"></span>
           </div>
 
 
