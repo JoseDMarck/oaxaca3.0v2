@@ -103,7 +103,25 @@
       <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)" class="Post_Redered"></div> 
 
 
-    <!-- <ng2-tweet tweetId="957671947055153152"></ng2-tweet>-->
+
+
+<div  *ngIf="this.showTwiiter_1">
+  <ng2-tweet tweetId="{{post.post_twitter_1}}"></ng2-tweet>
+</div>
+
+<div  *ngIf="this.showTwiiter_2">
+  <ng2-tweet tweetId="{{post.post_twitter_2}}"></ng2-tweet>
+</div>
+
+<div  *ngIf="this.showTwiiter_3">
+  <ng2-tweet tweetId="{{post.post_twitter_3}}"></ng2-tweet>
+</div>
+
+<div  *ngIf="this.showTwiiter_4">
+  <ng2-tweet tweetId="{{post.post_twitter_4}}"></ng2-tweet>
+</div>
+
+
 
    <!-- BannerBottom -->
     <app-banner-post-3></app-banner-post-3>

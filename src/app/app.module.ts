@@ -19,6 +19,9 @@ import { EspectaculosComponent  } from './posts/espectaculos/espectaculos.compon
 import { VideosComponent  } from './posts/videos/videos.component';
 import { OaxacaComponent  } from './posts/oaxaca/oaxaca.component';
 import { QuienesSomosComponent } from './posts/quienes-somos/quienes-somos.component';
+import { TwitterEmbedComponent } from './posts/twitter-embed/twitter-embed.component';
+
+
 import { Ng2TweetModule } from 'ng2-tweet/lib/index';
 
 
@@ -78,6 +81,7 @@ import { AdDFPComponent } from 'ng2-ad-dfp';
     VideosComponent,
     OaxacaComponent,
     QuienesSomosComponent,
+    TwitterEmbedComponent,
 
     //Banners 
     BannerPost1Component,

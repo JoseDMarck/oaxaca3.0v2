@@ -74,6 +74,18 @@ export class PostSingleComponent implements OnInit  {
   imageX:any;
   loadMoreVisible : boolean;
   selectedClass: number;
+  twitterID_1: string;
+  showTwiiter_1 : boolean;
+
+  twitterID_2: string;
+  showTwiiter_2 : boolean;
+
+  twitterID_3: string;
+  showTwiiter_3 : boolean;
+
+  twitterID_4: string;
+  showTwiiter_4 : boolean;
+
  
  constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService, private ng2TwwetService: Ng2TweetService ) { 
    this.arregloCountCat = [];
@@ -82,6 +94,10 @@ export class PostSingleComponent implements OnInit  {
     this.post_count = 20;
     this.tam_bloque_visible = false;
     this.tam_bloqueC_visible = true;
+    this.showTwiiter_1 = false;
+    this.showTwiiter_2 = false;
+    this.showTwiiter_3 = false;
+    this.showTwiiter_4 = false;
   
   }
 
@@ -101,9 +117,14 @@ export class PostSingleComponent implements OnInit  {
          this.slugArray = res[0].slug;
          this.TweetTitulo = res[0].title.rendered;
          this.tam_bloque = res[0].tamano_bloque;
+         this.twitterID_1 = res[0].post_twitter_1;
+         this.twitterID_2 = res[0].post_twitter_2;
+         this.twitterID_3 = res[0].post_twitter_3;
+         this.twitterID_4 = res[0].post_twitter_4;
          console.log("CATEGORIA", this.categoria);
          console.log("CURRENT ID", this.current_id);
          console.log("TAMAÑO BLOQUE", this.tam_bloque);
+         console.log("TWITTER CORDE", this.twitterID_1);
          this.getPostRelated(this.categoria, this.current_id);
          this.repoUrl = 'http://oaxacatrespuntocero.com/posts-redes/'+this.slugArray;
          this.runTeads();
@@ -121,6 +142,25 @@ export class PostSingleComponent implements OnInit  {
           console.log("this.tam_bloque_visible ", this.tam_bloque_visible );
         }
    
+         //Twitter show
+        if( this.twitterID_1 != "" ){
+          this.showTwiiter_1 = true;
+        }
+
+        if( this.twitterID_2 != "" ){
+          this.showTwiiter_2 = true;
+        }
+
+        if( this.twitterID_3 != "" ){
+          this.showTwiiter_3 = true;
+        }
+
+        if( this.twitterID_4 != "" ){
+          this.showTwiiter_4 = true;
+        }
+
+
+
       });
   }
 

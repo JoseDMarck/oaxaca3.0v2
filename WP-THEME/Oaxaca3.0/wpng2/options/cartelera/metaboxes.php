@@ -81,6 +81,10 @@ function vimeo_upload_form(){
 
   $value_id_post_fecha = (get_post_meta($post->ID, 'id_post_fecha', true));
   $value_id_post_author = (get_post_meta($post->ID, 'id_post_author', true));
+  $value_id_twitter_1 = (get_post_meta($post->ID, 'id_post_twitter_1', true));
+  $value_id_twitter_2 = (get_post_meta($post->ID, 'id_post_twitter_2', true));
+  $value_id_twitter_3 = (get_post_meta($post->ID, 'id_post_twitter_3', true));
+  $value_id_twitter_4 = (get_post_meta($post->ID, 'id_post_twitter_4', true));
 
 
 
@@ -239,6 +243,20 @@ $name = $category[0]->cat_name;
 
 
 
+<b><span style="color:#1abc9c">Introduce el codigo de Twitter No. 1: </span></b> <br><br>
+<input type="text" name="id_post_twitter_1" id="id_post_twitter_1" value="<?php echo $value_id_twitter_1; ?>" style="width: 200px;" /><br><br>
+
+
+<b><span style="color:#1abc9c">Introduce el codigo de Twitter No. 2: </span></b> <br><br>
+<input type="text" name="id_post_twitter_2" id="id_post_twitter_2" value="<?php echo $value_id_twitter_2; ?>" style="width: 200px;" /><br><br>
+
+
+<b><span style="color:#1abc9c">Introduce el codigo de Twitter No. 3: </span></b> <br><br>
+<input type="text" name="id_post_twitter_3" id="id_post_twitter_3" value="<?php echo $value_id_twitter_3; ?>" style="width: 200px;" /><br><br>
+
+
+<b><span style="color:#1abc9c">Introduce el codigo de Twitter No. 4: </span></b> <br><br>
+<input type="text" name="id_post_twitter_4" id="id_post_twitter_4" value="<?php echo $value_id_twitter_4; ?>" style="width: 200px;" /><br><br>
 
 
  
@@ -395,6 +413,43 @@ $name = $category[0]->cat_name;
   $var_1 = $_POST['id_post_categoria'];
   update_post_meta($post_id, 'id_post_categoria', $var_1);
   }
+
+
+
+  add_action('save_post', 'twitter_1_func');
+  function twitter_1_func() {
+  global $wpdb, $post;
+  if (!$post_id) $post_id = $_POST['post_ID'];
+  $var_1 = $_POST['id_post_twitter_1'];
+  update_post_meta($post_id, 'id_post_twitter_1', $var_1);
+  }
+
+
+  add_action('save_post', 'twitter_2_func');
+  function twitter_2_func() {
+  global $wpdb, $post;
+  if (!$post_id) $post_id = $_POST['post_ID'];
+  $var_1 = $_POST['id_post_twitter_2'];
+  update_post_meta($post_id, 'id_post_twitter_2', $var_1);
+  }
+
+  add_action('save_post', 'twitter_3_func');
+  function twitter_3_func() {
+  global $wpdb, $post;
+  if (!$post_id) $post_id = $_POST['post_ID'];
+  $var_1 = $_POST['id_post_twitter_3'];
+  update_post_meta($post_id, 'id_post_twitter_3', $var_1);
+  }
+
+
+  add_action('save_post', 'twitter_4_func');
+  function twitter_4_func() {
+  global $wpdb, $post;
+  if (!$post_id) $post_id = $_POST['post_ID'];
+  $var_1 = $_POST['id_post_twitter_4'];
+  update_post_meta($post_id, 'id_post_twitter_4', $var_1);
+  }
+
 
  
 
@@ -872,6 +927,109 @@ function slug_get_post_categoria( $post, $field_name, $request ) {
 
 
 function slug_update_post_categoria( $value, $object, $field_name ) {
+    if ( ! $value || ! is_string( $value ) ) { return; }
+    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+}
+
+
+/*------------------------------------------*\
+     REGISTRAMOS POST TWITTER
+\*-------------------------------------------*/
+add_action( 'rest_api_init', 'slug_register_id_post_twitter_1' );
+function slug_register_id_post_twitter_1() {
+    register_rest_field( 'post',
+        'post_twitter_1',
+        array(
+            'get_callback'    => 'slug_get_post_post_twitter_1',
+            'update_callback' => 'slug_update_post_post_twitter_1',
+            'schema'          => null,
+        )
+    );
+}
+
+function slug_get_post_post_twitter_1( $post, $field_name, $request ) {
+     return get_post_meta($post['id'], 'id_post_twitter_1', true);
+}
+
+
+function slug_update_post_post_twitter_1( $value, $object, $field_name ) {
+    if ( ! $value || ! is_string( $value ) ) { return; }
+    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+}
+
+
+/*------------------------------------------*\
+     REGISTRAMOS POST TWITTER_2
+\*-------------------------------------------*/
+add_action( 'rest_api_init', 'slug_register_id_post_twitter_2' );
+function slug_register_id_post_twitter_2() {
+    register_rest_field( 'post',
+        'post_twitter_2',
+        array(
+            'get_callback'    => 'slug_get_post_post_twitter_2',
+            'update_callback' => 'slug_update_post_post_twitter_2',
+            'schema'          => null,
+        )
+    );
+}
+
+function slug_get_post_post_twitter_2( $post, $field_name, $request ) {
+     return get_post_meta($post['id'], 'id_post_twitter_2', true);
+}
+
+
+function slug_update_post_post_twitter_2( $value, $object, $field_name ) {
+    if ( ! $value || ! is_string( $value ) ) { return; }
+    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+}
+
+/*------------------------------------------*\
+     REGISTRAMOS POST TWITTER_3
+\*-------------------------------------------*/
+add_action( 'rest_api_init', 'slug_register_id_post_twitter_3' );
+function slug_register_id_post_twitter_3() {
+    register_rest_field( 'post',
+        'post_twitter_3',
+        array(
+            'get_callback'    => 'slug_get_post_post_twitter_3',
+            'update_callback' => 'slug_update_post_post_twitter_3',
+            'schema'          => null,
+        )
+    );
+}
+
+function slug_get_post_post_twitter_3( $post, $field_name, $request ) {
+     return get_post_meta($post['id'], 'id_post_twitter_3', true);
+}
+
+
+function slug_update_post_post_twitter_3( $value, $object, $field_name ) {
+    if ( ! $value || ! is_string( $value ) ) { return; }
+    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+}
+
+
+/*------------------------------------------*\
+     REGISTRAMOS POST TWITTER_4
+\*-------------------------------------------*/
+add_action( 'rest_api_init', 'slug_register_id_post_twitter_4' );
+function slug_register_id_post_twitter_4() {
+    register_rest_field( 'post',
+        'post_twitter_4',
+        array(
+            'get_callback'    => 'slug_get_post_post_twitter_4',
+            'update_callback' => 'slug_update_post_post_twitter_4',
+            'schema'          => null,
+        )
+    );
+}
+
+function slug_get_post_post_twitter_4( $post, $field_name, $request ) {
+     return get_post_meta($post['id'], 'id_post_twitter_4', true);
+}
+
+
+function slug_update_post_post_twitter_4( $value, $object, $field_name ) {
     if ( ! $value || ! is_string( $value ) ) { return; }
     return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
 }
