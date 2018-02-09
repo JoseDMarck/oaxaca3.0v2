@@ -85,6 +85,7 @@ export class PostSingleComponent implements OnInit  {
 
   twitterID_4: string;
   showTwiiter_4 : boolean;
+  repoUrlWA: any;
 
  
  constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService, private ng2TwwetService: Ng2TweetService ) { 
@@ -127,6 +128,8 @@ export class PostSingleComponent implements OnInit  {
          console.log("TWITTER CORDE", this.twitterID_1);
          this.getPostRelated(this.categoria, this.current_id);
          this.repoUrl = 'http://oaxacatrespuntocero.com/posts-redes/'+this.slugArray;
+         this.repoUrlWA = 'whatsapp://send?text='+this.repoUrl;
+
          this.runTeads();
 
 
@@ -180,6 +183,7 @@ export class PostSingleComponent implements OnInit  {
   	this.route.params.forEach((params: Params) => {
        let slug = params['slug'];
        this.getPost(slug);
+         //window.location.reload();
          window.scrollTo(0, 0);
 
     });         
@@ -216,6 +220,9 @@ export class PostSingleComponent implements OnInit  {
     }
 
 
+    sanitize(url:string){
+      return this.sanitizer.bypassSecurityTrustUrl(url);
+    }
 
 
   ngAfterViewInit() {
@@ -248,7 +255,7 @@ export class PostSingleComponent implements OnInit  {
 
   selectPost(slug) {
    this.router.navigate([slug]);
-   console.log("Slug normal", slug)
+   console.log("Slug normal", slug);
   }
 
 
