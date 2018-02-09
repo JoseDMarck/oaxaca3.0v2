@@ -1236,10 +1236,25 @@ transform: scale(1.1,1.1); /* Standard syntax */
 
 
 .redesSociales{
-  width: 100px;
+  width: 140px;
   height: auto;
   font-size: 30px;
   text-align: center;
+}
+
+.redesSociales a{
+  color: #212529 !important;
+}
+
+.redesSociales a:hover{
+  color: #212529 !important;
+  padding: 0px !important;
+  -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+color: #CC151A !important;
+background: rgba(0,0,0,0) !important;
 }
 
 .redesSociales i {
@@ -1901,8 +1916,13 @@ padding: 5px;
   margin-left: 10px;
 } 
 
+.NotasRelacionadas > .BloqueInformacion > .informacion a {
+  color: #000;
+  text-decoration: none;
+} 
 
-.NotasRelacionadas > .BloqueInformacion > .informacion > .titulo{
+
+.NotasRelacionadas > .BloqueInformacion > .informacion >  a > .titulo{
   width: 100%;
   height: auto;
   font-family: "Roboto-Medium";
@@ -1911,7 +1931,7 @@ padding: 5px;
   margin-bottom: 20px;
 }
 
-.NotasRelacionadas > .BloqueInformacion > .informacion > .categoria{
+.NotasRelacionadas > .BloqueInformacion > .informacion > a > .categoria{
   width: 100%;
   height: auto;
   font-family: "CPMono_v07_Bold";
@@ -1929,7 +1949,7 @@ padding: 5px;
 }
 
 
-.NotasRelacionadas > .BloqueInformacion > .informacion > .extracto{
+.NotasRelacionadas > .BloqueInformacion > .informacion > a > .extracto{
   width: 100%;
   height: auto;
   font-family: "Roboto-Light";

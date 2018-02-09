@@ -161,7 +161,7 @@
     float: right;
   }
 
-  .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+  .NotasRelacionadas > .BloqueInformacion > .informacion > a > .extracto {
     font-size: 12px;
     line-height: 12px;
   }
@@ -354,7 +354,7 @@
     float: left;
 }
 
-.NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+.NotasRelacionadas > .BloqueInformacion > .informacion > a > .extracto {
     font-size: 15px;
     line-height: 15px;
 }
@@ -514,7 +514,7 @@
       display: none;
   }
 
-  .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+  .NotasRelacionadas > .BloqueInformacion > .informacion > a > .extracto {
       font-size: 12px;
       line-height: 12px;
   }
@@ -662,7 +662,7 @@
 
 }
 
-  .NotasRelacionadas > .BloqueInformacion > .informacion > .extracto {
+  .NotasRelacionadas > .BloqueInformacion > .informacion > a > .extracto {
     font-size: 14px;
     line-height: 14px;
 }
@@ -681,7 +681,7 @@
   line-height: 40px !important;
 }
 
-.NotasRelacionadas > .BloqueInformacion > .informacion > .extracto{
+.NotasRelacionadas > .BloqueInformacion > .informacion >  a > .extracto{
   display: block;
 }
 
