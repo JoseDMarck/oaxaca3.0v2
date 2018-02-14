@@ -11,6 +11,7 @@ import { Ng2TweetService } from 'ng2-tweet/lib/index'
 
 
 
+
 @Component({
   selector: 'app-post-single',
   templateUrl: './post-single.component.html',
@@ -88,7 +89,7 @@ export class PostSingleComponent implements OnInit  {
   repoUrlWA: any;
 
  
- constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService, private ng2TwwetService: Ng2TweetService ) { 
+ constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService, private ng2TwwetService: Ng2TweetService,  elm: ElementRef ) { 
    this.arregloCountCat = [];
     this.loadMoreVisible = false;
     this.futureString = "July 1, 2018 00:00:00";
@@ -189,6 +190,9 @@ export class PostSingleComponent implements OnInit  {
     });         
 
   }
+
+  
+   
 
   runTeads(){
     console.log("Run reads *******");
