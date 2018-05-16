@@ -87,6 +87,7 @@ export class PostSingleComponent implements OnInit  {
   twitterID_4: string;
   showTwiiter_4 : boolean;
   repoUrlWA: any;
+  reloadState:any;
 
  
  constructor(private postsService: PostsService,  private router: Router,  private route: ActivatedRoute, private sanitizer: DomSanitizer, private fb: FacebookService, private ng2TwwetService: Ng2TweetService,  elm: ElementRef ) { 
@@ -128,10 +129,21 @@ export class PostSingleComponent implements OnInit  {
          console.log("TAMAÑO BLOQUE", this.tam_bloque);
          console.log("TWITTER CORDE", this.twitterID_1);
          this.getPostRelated(this.categoria, this.current_id);
-         this.repoUrl = 'http://oaxacatrespuntocero.com/posts-redes/'+this.slugArray;
+         this.repoUrl = 'http://oaxacatrespuntocero.com/'+this.slugArray;
          this.repoUrlWA = 'whatsapp://send?text='+this.repoUrl;
 
-         this.runTeads();
+         this.reloadState = this.route.snapshot.queryParamMap.get("refresh");
+         
+        if(this.reloadState === "1"){
+            console.log("Reloaded Page OK", this.reloadState);
+            this.router.navigate([slug], { queryParams:{refresh:"0"} }); 
+            setTimeout(()=>{ window.location.reload(); }, 800); 
+        }
+        
+        else{
+            console.log("Reloaded Page NO", this.reloadState);      
+        }
+
 
 
          if(this.tam_bloque != "" ){
@@ -193,13 +205,6 @@ export class PostSingleComponent implements OnInit  {
 
   
    
-
-  runTeads(){
-    console.log("Run reads *******");
-    var script = document.createElement('script');
-    document.body.appendChild(script)
-    script.src = '//a.teads.tv/page/75644/tag';
-  }
   
 
 
@@ -258,7 +263,7 @@ export class PostSingleComponent implements OnInit  {
 }
 
   selectPost(slug) {
-   this.router.navigate([slug]);
+   this.router.navigate([slug], { queryParams:{refresh:"1"} });   
    console.log("Slug normal", slug);
   }
 
